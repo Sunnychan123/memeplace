@@ -121,11 +121,11 @@ a:visited {
     position: absolute;
     display: inline-block;
     width: 40%;
-    justify-content: right;
+    right: 0;
 }
 
 .m-features .m-features-right img {
-    margin-left: 20px;
+    margin-left: 30px;
     width:60%;
     height:60%;
 }
