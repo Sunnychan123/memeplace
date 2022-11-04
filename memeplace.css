@@ -11,52 +11,6 @@ body {
     z-index: -2;
 }
 
-.bg-video {
-    position: absolute;
-    left: 0 !important;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    object-fit: fill;
-}
-.top-headbar {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width:40%;
-    height:60px;
-    background: linear-gradient(#FFFFFF, transparent);
-    overflow-y: hidden;
-}
-
-a {
-    text-decoration:none;
-    color: black;
-}
-
-a:visited {
-    text-decoration:none;
-    color: black;
-}
-
-.top-headbar .top-headbar-el {
-    position: relative;
-    display: inline-block;
-    overflow-y: none;
-    width: 24.2%;
-    height: 100%;
-    text-align: center;
-    padding-top: 20px;
-    cursor: pointer;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    user-select:none;
-}
-
-.top-headbar .top-headbar-el:hover {
-    background-color: #FFFFFF;
-}
-
 .m-features {
     width: 40%;
     height:238px;
