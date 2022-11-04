@@ -14,9 +14,11 @@ body {
 .bg-video {
     position: absolute;
     left: 0 !important;
-    z-index: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
 }
-
 .top-headbar {
     position: absolute;
     right: 0;
@@ -27,7 +29,18 @@ body {
     overflow-y: hidden;
 }
 
+a {
+    text-decoration:none;
+    color: black;
+}
+
+a:visited {
+    text-decoration:none;
+    color: black;
+}
+
 .top-headbar .top-headbar-el {
+    position: relative;
     display: inline-block;
     overflow-y: none;
     width: 24.2%;
@@ -42,17 +55,16 @@ body {
 
 .top-headbar .top-headbar-el:hover {
     background-color: #FFFFFF;
-    cursor: pointer;
-    z-index: 3;
 }
 
 .m-features {
     width: 40%;
     height:238px;
-    margin: 0 3% 30px 0;
+    margin-right: 30px;
     display: inline-flex;
+    margin-bottom: 30px;
     position: relative;
-    left: 8.5%;
+    left: 10%;
     background-color: #FFFFFF;
     border-radius: 10px;
     cursor: pointer;
@@ -70,13 +82,13 @@ body {
 
 .banner {
     position: relative;
-    margin-top:60px;
     height:80px;
     text-align: center;
     font-size: 60px;
     font-weight: bolder;
-    color: #FFFFFF;
-    padding: 50px 0 30px 0;
+    color: black;
+    padding: 120px 0 30px 0;
+    z-index: 30 !important;
 }
 
 .m-features-header {
@@ -85,10 +97,35 @@ body {
 }
 
 .m-features-desc {
-    width:60%;
+    width:100%;
     margin-top: 10px;
-    line-height: 25px;
-    font-family:'Times New Roman', Times, serif;
-    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Caveat', cursive;
     margin-bottom: 10px;
+}
+
+.m-features .m-features-bullets {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.m-features .m-features-left {
+    display: inline-block;
+    width: 60%;
+    justify-content: left;
+}
+
+.m-features .m-features-right {
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    justify-content: right;
+}
+
+.m-features .m-features-right img {
+    margin-left: 20px;
+    width:60%;
+    height:60%;
 }

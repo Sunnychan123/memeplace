@@ -10,8 +10,8 @@
 </head>
 <body class="home">
 
-    <video class="bg-video" autoplay muted loop preload="metadata">
-        <source src="hkview.mp4" type="video/mp4">
+    <video class="bg-video" autoplay muted loop>
+        <source src="./src/memeplace.mp4" type="video/mp4">
     </video>
     <div class="top-headbar">
         <div class="top-headbar-el" onclick="goTo('./memeplace.html')">Home</div>
@@ -23,30 +23,52 @@
     <div class="banner">
         <div class="banner-header">Welcome To MemePlace ! !</div>
     </div>
-    <div class="m-features" onclick="goTo('./DailyMeme.html')">
+    <div class="m-features">
         <div class="m-features-header">Daily Meme
             <div class="m-features-desc">
-                Every user is given the same meme template each day and captions the Meme. 
-                To encourage the users to spread innovative and funny ideas among MemePlace
-            </div>
-        </div>
-    </div>
-    <div class="m-features" onclick="goTo('./MemeArena.html')">
-        <div class="m-features-header">Meme Arena
-            <div class="m-features-desc">
-                Users can upload a self-designed meme which will then be put into an 'arena'. Another challenger can personalize the Meme and start a 1vs1 battle by responding to each other by using Meme only. Other participants can give a like to the preferred one, and the player in 'arena' with more impressions wins the battle. Each 'arena' competition lasts long for a week.
-            </div>
-        </div>
-    </div>
-    <div class="m-features" onclick="goTo('./MemeMatching.html')">
-        <div class="m-features-header">Meme Matching
-            <div class="m-features-desc">
-                A user can upload a self-designed meme and have a chance to start the matching of a stranger in MemePlace once per day. Once the users like their own memes and want to know more about each other, they can kick off the communications in a private chatroom by accepting the invitations
+                <div class="m-features-left">
+                    <span class="m-features-bullets">• Every user is given the same meme template each day and captions the Meme</span>
+                    <span class="m-features-bullets">• To encourage the users to spread innovative and funny ideas among MemePlace</span>
+                </div>
+                <div class="m-features-right">
+                    <img src="./src/daily-calendar.png" alt=""/>
+                </div>
             </div>
         </div>
     </div>
     <div class="m-features">
-        <div class="m-features-header">Hello</div>
+        <div class="m-features-header">Meme Arena
+            <div class="m-features-desc">
+                <div class="m-features-left">
+                    <span class="m-features-bullets">• Users can upload a self-designed meme which will then be put into an 'arena'</span>
+                    <span class="m-features-bullets">• Another challenger can personalize the Meme and start a 1vs1 battle by responding to each other by using Meme only </span>
+                    <span class="m-features-bullets">• Other participants can give a like to the preferred one, and the player in 'arena' with more impressions wins the battle</span>
+                    <span class="m-features-bullets">• Each 'arena' competition lasts long for a week</span>
+                </div>
+                <div class="m-features-right">
+                    <img src="./src/stadium.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-features">
+        <div class="m-features-header">Meme Matching
+            <div class="m-features-desc">
+                <div class="m-features-left">
+                    <span class="m-features-bullets">• A user can upload a self-designed meme and have a chance to start the matching of a stranger in MemePlace once per day</span>
+                    <span class="m-features-bullets">• Kicking off the communications in a private chatroom by accepting the invitations if the users want to know more about each other</span>
+                </div>
+                <div class="m-features-right">
+                    <img src="./src/partner.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-features">
+        <div class="m-features-left">
+            <div class="m-features-header">Want to know more ?</div>
+        </div>
+        <div class="m-features-right"></div>
     </div>
     
     
@@ -56,7 +78,7 @@
             window.location.href = location;
         }
     </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
 </html>
